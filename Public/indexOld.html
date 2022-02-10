@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/3p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/gh/abhiprojectz/alertia/dist/alertia.js"></script>
+    <title>liteType</title>
+</head>
+<body>
+    <div class="navContainer">
+        <nav> 
+            <div class="left">
+                <button onclick="back()" class="navbtn back disabled"><i class="fa fa-arrow-left"></i></button>
+            </div>
+            <div class="right">
+                <button class="saveBtn disabled " onclick="save()" disabled><i class="fas fa-save"></i></button>
+                <div class="userBtn">
+                    <button onclick='showOptions()' class="userbtn">
+                        <span><img class="pfp" src="/favicon.png">
+                        <p class="username"></p></span>
+                    </button>
+                    <div class="userOptions disabled">
+                        <a href="/logout"><button class="logout warnBtn">Logout</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="itemsWrap disabled">
+        <div class="itemsNav">
+            <div class="left" style="color: grey;">
+                Create new:
+            </div>
+            <div class="right">
+                <button onclick="newFile('folder')" class="createFolder"><i class="far fa-folder"></i></button>
+                <button onclick="newFile('note')" class="createFile"><i class="far fa-file-alt"></i></button>
+            </div>
+        </div>
+        <div class="items"></div>
+    </div>
+    <div class="dialogWrap disabled">
+        <div class="dialogBlur"></div>
+        <div class="dialog"></div>
+    </div>
+    <div class="info">
+        <div class="progress circular"></div>
+    </div>
+    <div class="editorWrapper disabled">
+        <h1 id="heading">Lorem ipsum dolor sit amet.</h1>
+        <div id="editor"></div>
+    </div>
+    <!-- <script src="/scripts/ui.js"></script> -->
+    <!-- <script src="/scripts/loaditems.js"></script> -->
+    <!-- <script src="https://unpkg.com/vue@3.2.26/dist/vue.global.js"></script> -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@editorjs/link@latest"></script>
+    <script defer src="/scripts/biblePlugin.js"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/scripts/e.js"></script>
+    <!-- <script defer src="/scripts/ui.js"></script>
+    <script defer src="/scripts/router.js"></script> -->
+    <!-- <script src="/scripts/loader.js"></script>
+    <script src="/scripts/router.js"></script> -->
+</body>
+</html>

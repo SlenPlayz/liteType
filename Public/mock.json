@@ -1,0 +1,86 @@
+{
+    "uid": "String",
+    "email": "String",
+    "notes": [
+        {
+            "type":"note",
+            "title": "ipsum huhd",
+            "data": {
+                "time": 1639972344844,
+                "blocks": [
+                    {
+                        "id": "dLI9drpiXA",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "fwaf"
+                        }
+                    }
+                ],
+                "version": "2.22.2"
+            }
+        },
+        {
+            "type":"note",
+            "title": "ipsum huh",
+            "data": {
+                "time": 1639972344844,
+                "blocks": [
+                    {
+                        "id": "dLI9drpiXA",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "ipsumh huh????"
+                        }
+                    }
+                ],
+                "version": "2.22.2"
+            }
+        },
+        {
+            "type": "folder",
+            "title": "yes hi",
+            "contents": [
+                {
+                    "type":"note",
+                    "title": "lorem",
+                    "data": {
+                        "time": 1639972344844,
+                        "blocks": [
+                            {
+                                "id": "dLI9drpiXA",
+                                "type": "paragraph",
+                                "data": {
+                                    "text": "olorem2ges"
+                                }
+                            }
+                        ],
+                        "version": "2.22.2"
+                    }
+                },
+                {
+                    "type": "folder",
+                    "title": "yes hi",
+                    "contents": [
+                        {
+                            "title": "2ndfold",
+                            "type":"note",
+                            "data": {
+                                "time": 1639972344844,
+                                "blocks": [
+                                    {
+                                        "id": "dLI9drpiXA",
+                                        "type": "paragraph",
+                                        "data": {
+                                            "text": "2fold"
+                                        }
+                                    }
+                                ],
+                                "version": "2.22.2"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
